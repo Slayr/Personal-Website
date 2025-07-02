@@ -1,0 +1,6 @@
+import '@fontsource/space-mono';
+
+body {
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+}

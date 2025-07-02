@@ -1,0 +1,12 @@
+{
+  "name": "personal-website-backend",
+  "version": "1.0.0",
+  "description": "Backend for personal website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

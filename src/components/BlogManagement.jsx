@@ -15,7 +15,7 @@ const BlogManagement = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch('http://localhost:5000/api/blog');
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/blog`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

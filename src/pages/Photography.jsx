@@ -29,7 +29,7 @@ const Photography = () => {
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/photos')
+    fetch(`${import.meta.env.VITE_API_URL}/api/photos`)
       .then(response => response.json())
       .then(data => {
         setPhotos(data);

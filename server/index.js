@@ -27,6 +27,6 @@ app.get('/', (req, res) => {
   res.send('Personal Website Backend is running!');
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on port ${PORT}. Access it from other devices on the network via the Pi's IP address.`);
 });

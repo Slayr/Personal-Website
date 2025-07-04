@@ -50,7 +50,7 @@ const PhotoManagement = () => {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/photos/upload`, {
+      const response = await fetch('http://localhost:5000/api/photos/upload', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -81,7 +81,7 @@ const PhotoManagement = () => {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/photos/${photoId}`, {
+      const response = await fetch(`http://localhost:5000/api/photos/${photoId}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`,

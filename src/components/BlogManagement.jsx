@@ -70,7 +70,7 @@ const BlogManagement = () => {
 
         try {
           const token = localStorage.getItem('token');
-          const response = await fetch('http://localhost:5000/api/blog/upload-image', {
+          const response = await fetch(`${import.meta.env.VITE_API_URL}/api/blog/upload-image`, {
             method: 'POST',
             headers: {
               'Authorization': `Bearer ${token}`,
@@ -113,7 +113,7 @@ const BlogManagement = () => {
     const token = localStorage.getItem('token');
     const isEditing = currentPost.id && posts.some(p => p.id === currentPost.id);
     const method = isEditing ? 'PUT' : 'POST';
-    const url = isEditing ? `http://localhost:5000/api/blog/${currentPost.id}` : 'http://localhost:5000/api/blog';
+    const url = isEditing ? `${import.meta.env.VITE_API_URL}/api/blog/${currentPost.id}` : `${import.meta.env.VITE_API_URL}/api/blog`;
 
     const payload = isEditing ? currentPost : { title: currentPost.title, content: currentPost.content };
 
@@ -150,7 +150,7 @@ const BlogManagement = () => {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:5000/api/blog/${postId}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/blog/${postId}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`,

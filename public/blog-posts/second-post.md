@@ -1,14 +1,4 @@
-# My Second Blog Post
-Date: July 4, 2025
+# My First Blog Post
+Date: 2025-07-03
 
-This is the **content** of my second blog post. It also supports *Markdown*.
-
-Here's another image:
-
-![Example Image](/photos/jpeg/Example.jpeg)
-
-And a list:
-
-* Another Item 1
-* Another Item 2
-* Another Item 3
+hello world
